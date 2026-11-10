@@ -12,7 +12,7 @@ body {
 header,
 footer {
   background-color: #000;
-  color: #fff;
+  color: rgb(0, 162, 255);
 }
 
 nav {
