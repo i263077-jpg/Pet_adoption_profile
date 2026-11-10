@@ -1,6 +1,18 @@
-function say() {
+function say(petName = "") {
   console.log("Adopt button was clicked");
-  window.alert("Thanks for adopting");
+
+  if (petName) {
+    window.alert(`Thanks for adopting ${petName}`);
+  } else {
+    window.alert("Thanks for adopting");
+  }
 }
 
-document.getElementById("adopt-button").addEventListener("click", say);
+const adoptButton = document.getElementById("adopt-button");
+if (adoptButton) {
+  adoptButton.addEventListener("click", () => say());
+}
+
+document.querySelectorAll(".adopt-button").forEach((button) => {
+  button.addEventListener("click", () => say(button.dataset.petName));
+});
