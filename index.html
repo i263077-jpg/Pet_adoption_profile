@@ -3,56 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Adoption Profile</title>
+    <title>Pet Adoption | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <nav>
-      <div class="nav-left">
-        <span class="material-symbols-outlined">menu</span>
+    <header>
+      <nav aria-label="Main navigation">
+        <a class="site-name" href="index.html">Pet Adoption</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="pets.html">Our Pets</a>
+          <a href="adopt.html">How to Adopt</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Welcome to Pet Adoption</h1>
+      <p>Find a loving companion and give a pet a place to call home.</p>
+      <img
+        src="image/pexels-sefa-demirtas-2152709769-32557420.jpg"
+        width="300"
+        alt="Pet available for adoption"
+      />
+
+      <h2>Pets Looking for a Home</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Sex</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Meow</td>
+            <td>Cat</td>
+            <td>Male</td>
+            <td>1 year</td>
+          </tr>
+          <tr>
+            <td>JACK</td>
+            <td>Cat</td>
+            <td>Male</td>
+            <td>2 year</td>
+          </tr>
+          <tr>
+            <td>Daisy</td>
+            <td>Dog</td>
+            <td>Female</td>
+            <td>3 year</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="adopt-button-container">
+        <button id="adopt-button" type="button">Adopt</button>
       </div>
-      <div class="nav-right">
-        <span class="material-symbols-outlined">search</span>
-        <span class="material-symbols-outlined">favorite</span>
-      </div>
-    </nav>
+    </main>
 
-    <h1>Pet Adoption Profile</h1>
-    <img
-      src="image/pexels-sefa-demirtas-2152709769-32557420.jpg"
-      width="300"
-      alt="Pet profile picture"
-    />
-
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Sex</th>
-        <th>Age</th>
-      </tr>
-      <tr>
-        <td>Meow</td>
-        <td>Cat</td>
-        <td>Male</td>
-        <td>1 year</td>
-      </tr>
-      <tr>
-        <td>JACK</td>
-        <td>Cat</td>
-        <td>Male</td>
-        <td>2 year</td>
-      </tr>
-      <tr>
-        <td>Daisy</td>
-        <td>Dog</td>
-        <td>Female</td>
-        <td>3 year</td>
-      </tr>
-    </table>
-
-    <button type="button" onclick="say()">Adopt</button>
-
-    <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2026 Pet Adoption</p>
+    </footer>
   </body>
 </html>
