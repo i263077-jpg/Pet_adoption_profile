@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet adoption profile</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://googleapis.com" />
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      h1 {
+        color: rgb(0, 162, 255);
+      }
+      img {
+        display: block;
+        margin-inline: auto;
+        max-width: 100%;
+        height: auto;
+      }
+      
+     button{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: black;
+        border-bottom: 1px solid black;
+        color: white;
+      }
+      .nav-right {
+        display: flex;
+        gap: 15px;
+      }
+      .material-symbols-outlined {
+        cursor: pointer;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-left">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      
+      <div class="nav-right">
+        <span class="material-symbols-outlined">search</span>
+        <span class="material-symbols-outlined">favorite</span>
+      </div>
+    </nav>
+
+    <h1>Pet Adoption Profile</h1>
+    <img src="image/pexels-sefa-demirtas-2152709769-32557420.jpg" width="300" alt="Pet Profile Picture">
+    
+    <table style="width:100%">
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Sex</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Meow</td>
+        <td>Cat</td>
+        <td>Male</td>
+        <td>1 year</td>
+      </tr>
+      <tr>
+        <td>JACK</td>
+        <td>Cat</td>
+        <td>Male</td>
+        <td>2 year</td>
+      </tr>
+      <tr>
+        <td>Daisy</td>
+        <td>Dog</td>
+        <td>Female</td>
+        <td>3 year</td>
+      </tr>
+    </table>
+    <button type="button" onclick="say()">adopt</button>
+    <script >
+      function say() {
+    console.log("Adopt button was clicked");
+    window.alert("Thanks for adopting");
+  }
+    </script>
+  </body>
+</html>
