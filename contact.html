@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Pet Adoption</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <a class="site-name" href="index.html">Pet Adoption</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="pets.html">Our Pets</a>
+          <a href="adopt.html">How to Adopt</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contact Us</h1>
+      <p>Have a question about a pet or adoption? Send us a message.</p>
+
+      <div class="contact-layout">
+        <section class="contact-details">
+          <h2>Shelter Details</h2>
+          <p><strong>Address:</strong> Add your shelter address here</p>
+          <p><strong>Phone:</strong> Add your shelter phone number here</p>
+          <p><strong>Email:</strong> Add your shelter email address here</p>
+        </section>
+
+        <section>
+          <h2>Send a Message</h2>
+          <form id="contact-form">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" required />
+
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" required />
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Pet Adoption</p>
+    </footer>
+  </body>
+</html>

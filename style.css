@@ -244,3 +244,38 @@ footer p {
 .story-card p {
   margin: 0;
 }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+}
+
+.contact-details p {
+  margin: 8px 0;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#contact-form textarea {
+  resize: vertical;
+}
+
+#contact-form button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
